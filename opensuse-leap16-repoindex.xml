@@ -6,9 +6,21 @@
     sourceenable="false">
 
 <repo url="%{disturl}/repositories/openSUSE:/Leap:/16.0/standard/
+    alias="repo-standard"
+    name="%{alias} (16.0)"
+    enabled="true"
+    autorefresh="true"/>
+
+<repo url="%{disturl}/repositories/openSUSE:/Leap:/16.0/product/repo/Leap-Packages-16.0-$DIST_ARCH"
     alias="repo-oss"
     name="%{alias} (16.0)"
     enabled="true"
+    autorefresh="true"/>
+
+<repo url="%{disturl}/repositories/openSUSE:/Leap:/16.0/product/repo/Leap-x86-64-v3-16.0-$DIST_ARCH"
+    alias="repo-v3"
+    name="%{alias} (16.0)"
+    enabled="false"
     autorefresh="true"/>
 
 </repoindex>
